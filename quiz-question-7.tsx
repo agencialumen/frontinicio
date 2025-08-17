@@ -62,13 +62,13 @@ export default function QuizQuestion7() {
   const isCorrectAnswer = selectedOptionData?.isCorrect || false
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-950">
+    <div className="flex flex-col min-h-screen bg-white">
       {/* Audio elements */}
       <audio ref={errorAudioRef} preload="auto">
-        <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOM%20NEGADO%20OK-UTCE7VkKJOha7x5vtMo6JN0HKjld6J.mp3" type="audio/mpeg" />
+        <source src="/sounds/error-sound.mp3" type="audio/mpeg" />
       </audio>
       <audio ref={successAudioRef} preload="auto">
-        <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOM%20CERTO-6K7r361hgjfC5zX6hDP9qrmbJA0GtA.mp3" type="audio/mpeg" />
+        <source src="/sounds/success-sound.mp3" type="audio/mpeg" />
       </audio>
 
       {/* Header Bar - Mantém o mesmo cabeçalho */}

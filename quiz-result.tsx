@@ -13,7 +13,7 @@ export default function QuizResult() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-950">
+    <div className="flex flex-col min-h-screen bg-white">
       {/* Header Bar - Mantém o mesmo cabeçalho */}
       <div className="w-full bg-[#00a9a4] py-2 px-4 flex justify-center items-center">
         <div className="w-20 h-10 relative">
