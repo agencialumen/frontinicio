@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Quiz Pampers",
   description: "Quiz especial da Pampers - Ganhe fraldas grátis!",
-    generator: 'v0.app'
+    generator: 'Pampers'
 }
 
 export default function RootLayout({
