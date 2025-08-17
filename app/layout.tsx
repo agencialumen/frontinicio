@@ -10,7 +10,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Quiz Pampers",
   description: "Quiz especial da Pampers - Ganhe fraldas grátis!",
-    generator: 'Pampers'
 }
 
 export default function RootLayout({
@@ -19,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className="light">
       <head>
         {/* Meta Pixel Code */}
         <Script id="meta-pixel" strategy="afterInteractive">
@@ -46,8 +45,8 @@ export default function RootLayout({
           />
         </noscript>
       </head>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+      <body className={`${inter.className} bg-white`}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
           {children}
         </ThemeProvider>
       </body>
